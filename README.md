@@ -7,6 +7,10 @@ and [nginx-mod-http-dav-ext](https://github.com/arut/nginx-dav-ext-module).
 The core configuration is completely instructed by [Rob Peck's great article](https://www.robpeck.com/2020/06/making-webdav-actually-work-on-nginx/).
 If this repo helped you, please consider buying him a coffee.
 
+## Docker image
+
+TODO
+
 ## Example: running server
 
 Clone this repo and `docker-compose up`
