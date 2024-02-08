@@ -1,0 +1,18 @@
+version: '3'
+
+services:
+  nginx:
+    build: .
+    command:
+      - sh
+      - -uexc
+      - |
+        # chown to let nginx control entries inside
+        chown -Rc nginx:nginx /var/dav
+        exec nginx -g 'daemon off;'
+    volumes:
+      - ./data:/var/dav:rw
+      - ./http.d:/etc/nginx/http.d:ro
+      - ./snippets:/etc/nginx/snippets:ro
+    ports:
+      - 4080:80

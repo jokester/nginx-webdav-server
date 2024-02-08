@@ -1,0 +1,22 @@
+{
+  "#readme": "webdav demo with VSCode Remote Workspace extension",
+  "#ref": "https://marketplace.visualstudio.com/items?itemName=Liveecommerce.vscode-remote-workspace",
+  "folders": [
+    {
+      "uri": "webdav://127.0.0.1:4080/noauth?ssl=0",
+      "name": "globally writable"
+    },
+    {
+      "uri": "webdav://127.0.0.1:4080/noauth-ro?ssl=0",
+      "name": "globally readonly"
+    },
+    {
+      "uri": "webdav://john:doe@127.0.0.1:4080/basic-auth?ssl=0",
+      "name": "http basic-auth"
+    },
+    {
+      "uri": "webdav://garfield:not-doe@127.0.0.1:4080/basic-auth?ssl=0",
+      "name": "http basic-auth required but unprovided"
+    }
+  ]
+}
